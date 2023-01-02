@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
+import 'tippy.js/animations/scale.css';
+import 'tippy.js/themes/light.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Welcome to tooltip react app.</h1>
+      <h2>Hover to see the tooltip.</h2>
+
+      <div className="wrapper">
+        <div>
+          <Tippy theme="dark" animation="scale" content="Hey I am the Left Tooltip" placement="left">
+            <span className="span">Hover Me</span>
+          </Tippy>
+        </div>
+        <div>
+          <Tippy theme="dark" animation="scale" content="Hey I am the Top Tooltip" placement="top">
+            <span className="span">Hover Me</span>
+          </Tippy>
+        </div>
+        <div>
+          <Tippy theme="dark" animation="scale" content="Hey I am the Down Tootip" placement="bottom">
+            <span className="span">Hover Me</span>
+          </Tippy>
+        </div>
+
+        <div>
+          <Tippy theme="dark" animation="scale" content="Hey I am the Right Tooltip" placement="right">
+            <span className="span">Hover Me</span>
+          </Tippy>
+        </div>
+      </div>
     </div>
   );
 }
