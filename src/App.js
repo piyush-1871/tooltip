@@ -22,7 +22,7 @@ function App() {
           </Tippy>
         </div>
         <div>
-          <Tippy theme="dark" animation="scale" content="Hey I am the Down Tootip" placement="bottom">
+          <Tippy theme="dark" animation="scale" content="Hey I am the Bottom Tootip" placement="bottom">
             <span className="span">Hover Me</span>
           </Tippy>
         </div>
